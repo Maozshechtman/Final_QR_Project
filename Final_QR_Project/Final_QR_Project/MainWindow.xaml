@@ -1,12 +1,16 @@
-﻿<Window x:Class="Final_QR_Project.MainWindow"
+﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Final_QR_Project"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="Final_QR_Project.MainWindow"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <StackPanel RenderTransformOrigin="0.465,0.415">
+            <materialDesign:Snackbar HorizontalAlignment="Stretch" Height="100" VerticalAlignment="Stretch" Margin="0,0,-0.4,0"/>
+
+        </StackPanel>
     </Grid>
 </Window>
