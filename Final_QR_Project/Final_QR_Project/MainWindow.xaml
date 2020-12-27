@@ -8,9 +8,33 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <StackPanel RenderTransformOrigin="0.465,0.415">
-            <materialDesign:Snackbar HorizontalAlignment="Stretch" Height="100" VerticalAlignment="Stretch" Margin="0,0,-0.4,0"/>
-
+        <StackPanel>
+            <materialDesign:ColorZone
+  Mode="Custom"
+  Background="Black"
+  Foreground="White"
+  Padding="16 0"
+  ClipToBounds="False">
+                <StackPanel
+    Orientation="Horizontal">
+                    <ToggleButton
+      Style="{DynamicResource MaterialDesignHamburgerToggleButton}" />
+                    <TextBlock
+      VerticalAlignment="Center"
+      Margin="16 0" Text="Welcome  back  Yossi"/>
+                    <materialDesign:Badged
+      Badge="123"
+      VerticalAlignment="Center">
+                        <Button>
+                            New
+                        </Button>
+                    </materialDesign:Badged>
+                </StackPanel>
+            </materialDesign:ColorZone>
         </StackPanel>
+        <TextBox x:Name="QRCodeTB" HorizontalAlignment="Left" Height="149" Margin="182,0,0,0" TextWrapping="Wrap" Text="TextBox" Width="235"/>
+        <Button x:Name="QRCodebtn" Content="Get QR" HorizontalAlignment="Left" Height="39" Margin="182,290,0,92" Width="84" Click="QRCodebtn_Click"/>
+
+
     </Grid>
 </Window>

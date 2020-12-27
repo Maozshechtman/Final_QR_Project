@@ -10,7 +10,7 @@ namespace BL
 {
     public class PdfTest
     {
-        
+        //TODO: change the class name to PdfHandler
        public static void CreatePdf()
         {
             PdfDocument pdf = new PdfDocument();

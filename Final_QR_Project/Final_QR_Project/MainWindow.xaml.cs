@@ -16,7 +16,8 @@ using System.Windows.Shapes;
 using PdfSharp;
 using PdfSharp.Drawing;
 using PdfSharp.Pdf;
-
+using ZXing;
+using System.Drawing;
 namespace Final_QR_Project
 {
     /// <summary>
@@ -29,17 +30,14 @@ namespace Final_QR_Project
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void QRCodebtn_Click(object sender, RoutedEventArgs e)
         {
-            PdfDocument pdf = new PdfDocument();
-            pdf.Info.Title = "My First PDF";
-            PdfPage pdfPage = pdf.AddPage();
-            XGraphics graph = XGraphics.FromPdfPage(pdfPage);
-            XFont font = new XFont("Verdana", 20, XFontStyle.Bold);
-            graph.DrawString("This is my first PDF document", font, XBrushes.Black, new XRect(0, 0, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.Center);
-            string pdfFilename = "firstpage.pdf";
-            pdf.Save(pdfFilename);
-            Process.Start(pdfFilename);
+            //Parse Qr CODE
+            var qrcodebitmap = (Bitmap)Bitmap.FromFile(@"C:\Users\user\source\repos\Final_QR_Project\Final_QR_Project\Images\test1.png");
+            var qrCodeReader = new BarcodeReader();
+            var qrCodeResult = qrCodeReader.Decode(qrcodebitmap) ; 
+             
+            QRCodeTB.Text = qrCodeResult.Text;
         }
     }
 }
