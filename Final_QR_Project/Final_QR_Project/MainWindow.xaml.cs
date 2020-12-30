@@ -30,14 +30,5 @@ namespace Final_QR_Project
             InitializeComponent();
         }
 
-        private void QRCodebtn_Click(object sender, RoutedEventArgs e)
-        {
-            //Parse Qr CODE
-            var qrcodebitmap = (Bitmap)Bitmap.FromFile(@"C:\Users\user\source\repos\Final_QR_Project\Final_QR_Project\Images\test1.png");
-            var qrCodeReader = new BarcodeReader();
-            var qrCodeResult = qrCodeReader.Decode(qrcodebitmap) ; 
-             
-            QRCodeTB.Text = qrCodeResult.Text;
-        }
     }
 }

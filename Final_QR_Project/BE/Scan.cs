@@ -6,14 +6,16 @@ using System.Threading.Tasks;
 
 namespace BE
 {
-    public class Product
+    public class Scan
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public int AllAmount { get; set; }
+        public int ProductId { get; set; }
+        public int Amount { get; set; }
+        public DateTime Date { get; set; }
+        public int StoreId { get; set; }
         public double Price { get; set; }
         public int Rate { get; set; }
-        public string ImageUrl { get; set; }
-        public string Description { get; set; }
+
+
     }
 }
