@@ -12,7 +12,7 @@ namespace BE
         public string Name { get; set; }
         public int AllAmount { get; set; }
         public double Price { get; set; }
-        public int Rate { get; set; }
+        public int AvgRate { get; set; }
         public string ImageUrl { get; set; }
         public string Description { get; set; }
     }

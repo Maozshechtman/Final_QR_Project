@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,26 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using PdfSharp;
-using PdfSharp.Drawing;
-using PdfSharp.Pdf;
-using ZXing;
-using System.Drawing;
-namespace Final_QR_Project
+
+namespace Final_QR_Project.UserControls
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for ProductUserControl.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ProductUserControl : UserControl
     {
-        public MainWindow()
+        public ProductUserControl()
         {
             InitializeComponent();
-        }
-
-        private void ToggleButton_Checked(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
