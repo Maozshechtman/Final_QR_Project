@@ -55,6 +55,12 @@
     <Reference Include="Google.Apis.PlatformServices, Version=1.49.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
       <HintPath>..\packages\Google.Apis.1.49.0\lib\net45\Google.Apis.PlatformServices.dll</HintPath>
     </Reference>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
     <Reference Include="MaterialDesignColors, Version=2.0.0.2312, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
       <HintPath>..\packages\MaterialDesignColors.2.0.0-ci2312\lib\net452\MaterialDesignColors.dll</HintPath>
     </Reference>
@@ -111,8 +117,11 @@
     </ApplicationDefinition>
     <Compile Include="Commands\UpdateCommand.cs" />
     <Compile Include="Models\ScanModel.cs" />
-    <Compile Include="UserControls\ProductUserControl.xaml.cs">
-      <DependentUpon>ProductUserControl.xaml</DependentUpon>
+    <Compile Include="UserControls\ProductUC.xaml.cs">
+      <DependentUpon>ProductUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ScanUC.xaml.cs">
+      <DependentUpon>ScanUC.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\ProductsVM.cs" />
     <Compile Include="ViewModels\ScansVM.cs" />
@@ -128,7 +137,11 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="UserControls\ProductUserControl.xaml">
+    <Page Include="UserControls\ProductUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\ScanUC.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

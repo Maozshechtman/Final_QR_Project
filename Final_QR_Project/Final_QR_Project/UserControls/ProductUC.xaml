@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Final_QR_Project.UserControls"
-             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="Final_QR_Project.UserControls.ProductUserControl"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="Final_QR_Project.UserControls.ProductUC"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid Margin="78,0,184,78.6">
@@ -28,7 +28,7 @@
                     <Image Source="C:\Users\user\source\repos\Final_QR_Project\Images\Products\product0111.jpg"
                            Height="140" Margin="-10,10,10,190"/>
                     <TextBlock
-        Style="{StaticResource MaterialDesignSubtitle1TextBlock} " 
+        Style="{StaticResource MaterialDesignSubtitle1TextBlock}" 
                         FlowDirection="RightToLeft"
         Margin="0,150,0,155">
                         
@@ -66,3 +66,4 @@
 
 
 </UserControl>
+

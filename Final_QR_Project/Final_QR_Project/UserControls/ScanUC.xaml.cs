@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace Final_QR_Project.UserControls
 {
     /// <summary>
-    /// Interaction logic for ProductUserControl.xaml
+    /// Interaction logic for ScanUC.xaml
     /// </summary>
-    public partial class ProductUserControl : UserControl
+    public partial class ScanUC : UserControl
     {
-        public ProductUserControl()
+        public ScanUC()
         {
             InitializeComponent();
         }

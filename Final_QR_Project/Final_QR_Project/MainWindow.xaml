@@ -5,16 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Final_QR_Project"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="Final_QR_Project.MainWindow"
+       xmlns:UserControls="clr-namespace:Final_QR_Project.UserControls"
+      xmlns:Wpf="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
         mc:Ignorable="d"
         Title="Smart Buy" Height="450" Width="800">
     <StackPanel>
+       
         <materialDesign:DrawerHost
   Margin="50,32,31.6,32"
   HorizontalAlignment="Center"
   VerticalAlignment="Center"
   BorderThickness="0"
   BorderBrush="{DynamicResource MaterialDesignDivider}" Height="454" Width="712">
-            <materialDesign:DrawerHost.Style>
+          
+                <materialDesign:DrawerHost.Style>
                 <Style
       TargetType="materialDesign:DrawerHost"
       BasedOn="{StaticResource {x:Type materialDesign:DrawerHost}}">
@@ -35,7 +39,14 @@
                     <TextBlock
         Margin="4"
         HorizontalAlignment="Center">
-      LEFT FIELD
+                   <Button
+        Command="{x:Static materialDesign:DrawerHost.CloseDrawerCommand}"
+        CommandParameter="{x:Static Dock.Left}"
+        Margin="4"
+        HorizontalAlignment="Center"
+        Style="{DynamicResource MaterialDesignFlatButton}">
+                       Back
+                    </Button>
                     </TextBlock>
                     <Button
         Command="{x:Static materialDesign:DrawerHost.CloseDrawerCommand}"
@@ -54,8 +65,38 @@
                     </Button>
                 </StackPanel>
             </materialDesign:DrawerHost.LeftDrawerContent>
+            <materialDesign:ColorZone
+  Mode="Custom"
+  Background="Black"
+  Foreground="White"
+  Padding="16 0"
+  ClipToBounds="False" Margin="0,10,0,0">
+                <StackPanel
+    Orientation="Horizontal">
+                    <ToggleButton Name="Colorzonebtn"
+                        Command="{x:Static materialDesign:DrawerHost.OpenDrawerCommand}"
+                         CommandParameter="{x:Static Dock.Left}"
+                        IsChecked="False"
+      Style="{DynamicResource MaterialDesignHamburgerToggleButton}" Checked="Colorzonebtn_Checked" />
+                    <TextBlock
+      VerticalAlignment="Center"
+      Margin="16 0">
+    Welcome to Smart Buy
+                    </TextBlock>
+                    <materialDesign:Badged
+      Badge="123"
+      VerticalAlignment="Center">
+                        <Button Style="{StaticResource MaterialDesignFloatingActionMiniLightButton}">
+                            <materialDesign:PackIcon Kind="Bell" />
+                                
+                        </Button>
+                    </materialDesign:Badged>
+                </StackPanel>
+            </materialDesign:ColorZone>
         </materialDesign:DrawerHost>
+        
     </StackPanel>
+    
 
 
 </Window>
