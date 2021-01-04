@@ -17,7 +17,7 @@
       Source="C:\Users\user\source\repos\Final_QR_Project\Images\Barcodes\Demo.png"
       Width="Auto"
       Stretch="UniformToFill" Margin="0,0,614,251.6" Height="190" />
-        <StackPanel Margin="0,199,0,-0.4">
+        <StackPanel Margin="0,199,10.2,0">
             <TextBox Name="ProductNameTB"
   materialDesign:HintAssist.Hint="Borekas"
   IsEnabled="False"
