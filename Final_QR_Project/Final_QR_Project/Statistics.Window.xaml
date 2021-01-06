@@ -9,7 +9,7 @@
         mc:Ignorable="d"
         Title="Statistics" Height="450" Width="800">
     <Window.DataContext>
-        <local:StatisticVM/>
+        <local:ProductsVM/>
     </Window.DataContext>
     <Grid>
         <chart:SfChart>
@@ -17,8 +17,11 @@
                 <chart:CategoryAxis/>
             </chart:SfChart.PrimaryAxis>
             <chart:SfChart.SecondaryAxis>
-                <chart:NumericalAxis/>
+                <chart:NumericalAxis Header=""/>
             </chart:SfChart.SecondaryAxis>
+            <chart:ColumnSeries Label="Product" ItemsSource="{Binding Products}" XBindingPath="Id" YBindingPath="AllAmount"/>
+
+
         </chart:SfChart>
     </Grid>
 </Window>

@@ -4,8 +4,8 @@
               xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
               xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
               xmlns:local="clr-namespace:Final_QR_Project.UserControls"
-              xmlns:domain="clr-namespace:MaterialDesignDemo.Domain"
-              xmlns:domain1="clr-namespace:MaterialDesignDemo.Domain"
+         
+           
            
              mc:Ignorable="d" 
              d:DesignHeight="450" Width="798.944">

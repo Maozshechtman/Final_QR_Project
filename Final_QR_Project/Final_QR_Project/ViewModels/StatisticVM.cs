@@ -1,17 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BE;
 namespace Final_QR_Project.ViewModels
 {
-    public class StatisticVM
+    public class StatisticVM : INotifyPropertyChanged
     {
-        public List<Product> Data {get;set;}
+        public ObservableCollection<Product> Data {get;set;}
         public StatisticVM()
         {
-            Data = new List<Product>()
+            Data = new ObservableCollection<Product>()
             {
                 new Product { Id = 1, Name = "Chips", AllAmount = 100, AvgRate = 3 }
                 , new Product { Id = 2, Name = "Almond Milk", AllAmount = 14, AvgRate = 4 }
@@ -22,5 +24,7 @@ namespace Final_QR_Project.ViewModels
                 
                
         }
+
+        public event PropertyChangedEventHandler PropertyChanged;
     }
 }

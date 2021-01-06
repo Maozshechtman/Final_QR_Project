@@ -36,6 +36,7 @@
                     </TextBlock>
                     <materialDesign:RatingBar
           Value="4"
+           Max="5"
           FlowDirection="RightToLeft"
           Orientation="Horizontal"
           Foreground="Gold"

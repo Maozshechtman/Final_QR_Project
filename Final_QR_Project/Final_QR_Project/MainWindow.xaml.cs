@@ -32,9 +32,12 @@ namespace Final_QR_Project
 
         
 
-        private void Colorzonebtn_Checked(object sender, RoutedEventArgs e)
+        
+
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Colorzonebtn.IsChecked = false;
+           var  messge =  DAL.DbAdapter.Main();
+            MessageBox.Show(messge);
         }
     }
 }

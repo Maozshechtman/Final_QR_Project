@@ -65,34 +65,8 @@
                     </Button>
                 </StackPanel>
             </materialDesign:DrawerHost.LeftDrawerContent>
-            <materialDesign:ColorZone
-  Mode="Custom"
-  Background="Black"
-  Foreground="White"
-  Padding="16 0"
-  ClipToBounds="False" Margin="0,10,0,0">
-                <StackPanel
-    Orientation="Horizontal">
-                    <ToggleButton Name="Colorzonebtn"
-                        Command="{x:Static materialDesign:DrawerHost.OpenDrawerCommand}"
-                         CommandParameter="{x:Static Dock.Left}"
-                        IsChecked="False"
-      Style="{DynamicResource MaterialDesignHamburgerToggleButton}" Checked="Colorzonebtn_Checked" />
-                    <TextBlock
-      VerticalAlignment="Center"
-      Margin="16 0">
-    Welcome to Smart Buy
-                    </TextBlock>
-                    <materialDesign:Badged
-      Badge="123"
-      VerticalAlignment="Center">
-                        <Button Style="{StaticResource MaterialDesignFloatingActionMiniLightButton}">
-                            <materialDesign:PackIcon Kind="Bell" />
-                                
-                        </Button>
-                    </materialDesign:Badged>
-                </StackPanel>
-            </materialDesign:ColorZone>
+            <Button Content="Create DB" HorizontalAlignment="Left" Margin="279,136,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+
         </materialDesign:DrawerHost>
         
     </StackPanel>

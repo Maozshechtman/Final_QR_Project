@@ -4,12 +4,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.28010.2046
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Final_QR_Project", "Final_QR_Project\Final_QR_Project.csproj", "{BF1AA2B7-101D-4554-B679-C3EFD7EE52CC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{89BAB561-6EF5-4794-9AC1-03A58B42F351} = {89BAB561-6EF5-4794-9AC1-03A58B42F351}
+		{331BB971-F4F5-4A8C-A168-541BE24334FF} = {331BB971-F4F5-4A8C-A168-541BE24334FF}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BE", "BE\BE.csproj", "{6F68917F-9EC2-40B5-AFEF-F88B4B6B8EE9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BL", "BL\BL.csproj", "{331BB971-F4F5-4A8C-A168-541BE24334FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{89BAB561-6EF5-4794-9AC1-03A58B42F351}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL", "DAL\DAL.csproj", "{89BAB561-6EF5-4794-9AC1-03A58B42F351}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
